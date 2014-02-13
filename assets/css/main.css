@@ -432,3 +432,8 @@ padding-bottom: 15px;
 .grid img:hover {
     opacity: 1;
 }
+
+
+.item p {
+    min-height: 60px;
+}
