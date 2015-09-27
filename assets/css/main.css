@@ -251,6 +251,24 @@ padding-bottom: 15px;
     font-size: 40px;
 }
 
+.goto-blog {
+    background:#131313;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: Courier New, Courier, monospace
+}
+
+.goto-blog a{
+    color: white;
+}
+
+.goto-blog .comment {
+    color: #27ae60;
+}
+
+
 /* Footer Wrap */
 #f {
 	background: #2d2d2d;
