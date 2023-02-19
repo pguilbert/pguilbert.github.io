@@ -35,6 +35,8 @@ a {
 }
 
 .links > a {
+  display: inline-block;
   margin-right: 10px;
+  min-height: 48px;
 }
 
