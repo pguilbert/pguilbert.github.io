@@ -64,6 +64,12 @@ h1 {
   font-family: 'Inconsolata', monospace;
 }
 
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
 a {
   color: inherit;
 }
@@ -120,4 +126,27 @@ button:focus-visible {
 
 #light-switch svg path {
   fill: var(--text);
+}
+
+
+.news {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: 1px solid var(--text);
+}
+.news ul {
+  padding: 0;
+}
+.news li {
+  list-style: none;
+  font-family: 'Inconsolata', monospace;
+}
+.news a {
+  text-decoration: none;
+}
+.news a .name {
+  text-decoration: underline;
+}
+.news a .url {
+  font-size: 0.8em;
 }
