@@ -1,5 +1,4 @@
-import { signal } from "@preact/signals"
-import { effect } from "@preact/signals-core"
+import { effect, signal } from "@preact/signals-core"
 
 type Mode = 'dark' | 'light'
 
