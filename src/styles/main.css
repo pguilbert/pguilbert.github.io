@@ -1,9 +1,9 @@
 :root {
   --background-light: #fff;
-  --background-dark: #0F0E0E;
+  --background-dark: #0f0e0e;
   --text-light: #000;
   --text-dark: #fff;
-  
+
   --background: var(--background-light);
   --text: var(--text-light);
   --only-dark-mode-display: none;
@@ -13,16 +13,25 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
   color-scheme: light;
+}
+
+html,
+body,
+button,
+code {
+  font-family: "Inconsolata Variable", "Inconsolata-fallback-1", "Inconsolata-fallback-2", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,15 +66,9 @@ body {
   background-color: var(--background);
   color: var(--text);
   transition: background-color 0.25s;
-  
-}
-
-h1 {
-  font-family: 'Inconsolata', monospace;
 }
 
 h2 {
-  font-family: 'Inconsolata', monospace;
   font-weight: 600;
   font-size: 1.1em;
 }
@@ -105,7 +108,6 @@ button:focus-visible {
   min-height: 48px;
 }
 
-
 #light-switch {
   position: absolute;
   top: 10px;
@@ -128,7 +130,6 @@ button:focus-visible {
   fill: var(--text);
 }
 
-
 .news {
   margin-top: 50px;
   padding: 10px 20px;
@@ -139,7 +140,7 @@ button:focus-visible {
 }
 .news li {
   list-style: none;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 .news a {
   text-decoration: none;
