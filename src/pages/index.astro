@@ -3,30 +3,33 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Paul Guilbert | Software engineer at Back Market">
-  <main class="container">
-    <img src="/me.webp" alt="" class="profile-img" aria-hidden="true" width="150" height="150" />
-    <h1>
+  <main class="flex flex-col gap-4">
+    <img src="/me.webp" alt="" class="rounded-full" width="150" height="150" />
+    <h1 class="text-[2em] font-bold">
       Paul Guilbert <small>
-        - Software engineer at <a href="https://www.backmarket.com/" target="_blank">
+        - Software engineer at <a
+          href="https://www.backmarket.com/"
+          target="_blank"
+          class="underline">
           Back Market</a
         >.
       </small>
     </h1>
 
-    <div class="links">
+    <div class="underline flex gap-4">
       <a href="https://www.linkedin.com/in/paulguilbert/" target="_blank">Linkedin</a>
       <a href="https://bsky.app/profile/pguilbert.dev" target="_blank">Bluesky</a>
       <a href="https://github.com/pguilbert" target="_blank">Github</a>
     </div>
 
-    <section class="news">
-      <h2>NEWS</h2>
+    <section class="news flex flex-col p-4 mt-12">
+      <h2 class="text-lg font-semibold">NEWS</h2>
       <ul>
         <li>
           <a
             href="https://engineering.backmarket.com/payment-at-back-market-one-form-to-rule-them-all-e34b1a7cf044"
-            >2023 - <span class="name">Payment at Back Market: one form to rule them all</span>
-            <span class="url" aria-hidden="true">(https://engineering.backmarket.com)</span></a
+            >2023 - <span class="underline">Payment at Back Market: one form to rule them all</span>
+            <span class="text-xs" aria-hidden="true">(https://engineering.backmarket.com)</span></a
           >
         </li>
       </ul>

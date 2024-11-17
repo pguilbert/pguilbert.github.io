@@ -10,15 +10,6 @@
   --only-light-mode-display: block;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 html,
 body {
   width: 100%;
@@ -96,18 +87,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.profile-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-
-.links > a {
-  display: inline-block;
-  margin-right: 10px;
-  min-height: 48px;
-}
-
 #light-switch {
   position: absolute;
   top: 10px;
@@ -131,23 +110,5 @@ button:focus-visible {
 }
 
 .news {
-  margin-top: 50px;
-  padding: 10px 20px;
   border: 1px solid var(--text);
-}
-.news ul {
-  padding: 0;
-}
-.news li {
-  list-style: none;
-  font-family: "Inconsolata", monospace;
-}
-.news a {
-  text-decoration: none;
-}
-.news a .name {
-  text-decoration: underline;
-}
-.news a .url {
-  font-size: 0.8em;
 }
