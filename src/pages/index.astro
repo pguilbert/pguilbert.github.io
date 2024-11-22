@@ -1,44 +1,16 @@
 ---
+import Header from "../components/Header.astro";
+import RecentPosts from "../components/RecentPosts.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Paul Guilbert | Software engineer at Back Market">
-  <main class="flex flex-col gap-4">
-    <img src="/me.webp" alt="" class="rounded-full" width="150" height="150" />
-    <h1 class="text-[2em] font-bold">
-      Paul Guilbert <small>
-        - Software engineer at <a
-          href="https://www.backmarket.com/"
-          target="_blank"
-          class="underline">
-          Back Market</a
-        >.
-      </small>
-    </h1>
-
-    <div class="underline flex gap-4">
-      <a href="https://www.linkedin.com/in/paulguilbert/" target="_blank">Linkedin</a>
-      <a href="https://bsky.app/profile/pguilbert.dev" target="_blank">Bluesky</a>
-      <a href="https://github.com/pguilbert" target="_blank">Github</a>
+  <main>
+    <div class="flex flex-col justify-center items-center min-h-svh">
+      <div class="flex flex-col gap-4 p-3">
+        <Header />
+        <RecentPosts />
+      </div>
     </div>
-
-    <section class="news flex flex-col p-4 mt-12 gap-4">
-      <h2 class="text-lg font-semibold">recent posts:</h2>
-      <ul class="flex flex-col gap-2">
-        <li>
-          > <a href="https://dev.to/pguilbert/a-remplacement-for-typescript-enums-4705"
-            ><span class="underline">An alternative solution to Typescript enums</span>
-            <span class="text-xs" aria-hidden="true">(https://dev.to)</span></a
-          >
-        </li>
-        <li>
-          > <a
-            href="https://engineering.backmarket.com/payment-at-back-market-one-form-to-rule-them-all-e34b1a7cf044"
-            ><span class="underline">Payment at Back Market: one form to rule them all</span>
-            <span class="text-xs" aria-hidden="true">(https://engineering.backmarket.com)</span></a
-          >
-        </li>
-      </ul>
-    </section>
   </main>
 </Layout>
